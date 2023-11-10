@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h2>Игра «Угадай число»</h2>
+    <p>Выберите диапазон чисел:</p>
+    <input type="number" id="minRange" placeholder="Минимальное значение" value="1">
+    <input type="number" id="maxRange" placeholder="Максимальное значение" value="100">
+    <button onclick="setRange()">Установить диапазон</button>
+    <p id="rangeMessage"></p>
+
+    <p>Компьютер загадал число. Попробуйте угадать!</p>
+    <input type="number" id="guessField" placeholder="Введите число">
+    <button onclick="checkGuess()">Проверить</button>
+    <button style="margin-top: 10px;" onclick="initGame()">Начать заново</button>
+    <p id="message"></p>
+    <p id="hint"></p>
+    <p id="attempts"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
